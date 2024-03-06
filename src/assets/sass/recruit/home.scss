@@ -1,0 +1,355 @@
+@import '../variables.scss';
+.content {
+    width: 100%;
+    .header-curve {
+        position: absolute;
+        top: 70px;
+        width: 100%;
+        z-index: 10;
+    }
+
+    .hero {
+        background-image:url('/image/upload/recruit/background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-y: -50px;
+        color: white;
+        min-height: 610px;
+        .hero_content {
+            padding: 7rem 1rem 4rem;
+            position: relative;
+            z-index: 10;
+
+            .fa-check {
+                padding-right: 10px;
+            }
+
+            h3 {
+                font-size: $font-size-base * 1.2;
+                a {
+                    color: $white;
+                    text-decoration: underline;
+                }
+            }
+        }
+        h1 {
+            font-size: 28px;
+            line-height: 1.15;
+            margin-bottom: 1rem;
+        }
+        .wrapper {
+            margin: 0 auto;
+            max-width: 1200px;
+            top: 10%;
+        }
+        .back_image_graphic {
+            height: 530px;
+            position: absolute;
+            width: 750px;
+            background-repeat: no-repeat;
+            background-size: cover;
+            right: -40px;
+            top: 10%;
+            transform: scale(0.888);
+        }
+        svg {
+            transform: translateY(49%);
+        }
+    }
+
+    .dot-frame-button {
+        background-color: $white;
+        float: right;
+    }
+
+    .box {
+        padding: 30px;
+        box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+        background: #fff;
+        transition: 0.4s;
+        margin: 10px 20px 20px 10px;
+        border-radius: 2px;
+        .icon {
+            float: left;
+            i {
+                color: #444;
+                font-size: 64px;
+                transition: 0.5s;
+                line-height: 0;
+                margin-top: 34px;
+            }
+            i:before {
+                background: #0c2e8a;
+                background: linear-gradient(45deg, #4e98d6 0%, #4e98d6 100%);
+                background-clip: border-box;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        &:hover {
+            box-shadow: 0px 0px 30px rgba(73, 78, 92, 0.15);
+        }
+
+        .post_content_container {
+            padding: 2rem 1rem 1rem;
+            position: relative;
+        }
+
+        .icon {
+            &:before {
+                content: "";
+                position: absolute;
+                width: 50px;
+                height: 50px;
+                border-radius: 100px;
+            }
+        }
+        .health {
+            &:before {
+                background-image: url('/image/upload/recruit/icon__blog-marketing--white.svg');
+                background-color: $blue-300;
+            }
+        }
+
+        .bonus {
+            &:before {
+                background-image: url('/image/upload/recruit/icon__blog-sales--white.svg');
+                background-color: $blue-300;
+            }
+        }
+
+        .holiday {
+            &:before {
+                background-image: url('/image/upload/recruit/icon--retainer.svg');
+                background-color: $blue-300;
+            }
+        }
+
+        .education {
+            &:before {
+                background-image: url('/image/upload/recruit/icon--eduacation-pink.svg');
+                background-color: $blue-300;
+            }
+        }
+
+        .description {
+            padding-left: 20%;
+            color: $black;
+
+            span {
+                color: $blue-400;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .benefit {
+        margin-top: 3%;
+    }
+    .container {
+        .header {
+            margin-bottom: 20px;
+        }
+        h1 {
+            color: $blue-500;
+            font-weight: bold;
+        }
+    }
+
+    .career {
+        margin-top: 50px !important;
+        h1 {
+            text-align: center;
+            color: $blue-500;
+            font-weight: bold;
+        }
+    }
+
+    #career {
+        margin-top: 30px;
+        .box-career {
+            padding: 10px;
+        }
+
+        .features_list {
+            position: relative;
+            transition: all 0.3s;
+            .item-course {
+                border: 1px solid #F2F2F2;
+                box-sizing: border-box;
+                border-radius: 6px;
+                .img {
+                    img {
+                        border-radius: 6px 6px 0 0;
+                        max-height: 500px;
+                        width: 100%;
+                    }
+                }
+                .content {
+                    padding: 10px 20px;
+                    background: $white;
+                    text-align: center;
+                    h3 {
+                        font-size: 150%;;
+                    }
+                }
+            }
+            .detail-course {
+                background: #fff;
+                border: 1px solid #F2F2F2;
+                box-sizing: border-box;
+                box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.1);
+                border-radius: 6px;
+                padding: 20px;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 9;
+                visibility: hidden;
+                opacity: 0;
+                cursor: pointer;
+                h3 {
+                    text-align: center;
+                    a {
+                        font-weight: 600;
+                        font-size: $font-size-base;
+                        color: $black;
+                        line-height: 20px;
+                        display: block;
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                        &:hover {
+                            color: $blue-500;
+                        }
+                    }
+                }
+                .btn-orange {
+                    color: #fff !important;
+                    background: $blue-500;
+                    font-size: 14px;
+                    font-weight: 600;
+                    padding: 8px 20px;
+                    border-radius: 4px;
+                    display: inline-block;
+                    transition: all 0.3s;
+                    border: 1px solid $blue-500;
+                  }
+                  
+                  .btn-orange:hover {
+                    background:  $blue-300;
+                    border-radius: 4px;
+                    border: 1px solid $blue-300;
+                  }
+            }
+            &:hover { 
+                .detail-course {
+                    visibility: visible;
+                    transition: all 0.3s;
+                    opacity: 1;
+              }
+            }
+        }
+    }
+
+    .staff {
+        margin-top: 50px;
+        margin-bottom: 50px;
+        .interview {
+            margin-bottom: 50px;
+            min-height: 344px;
+            box-shadow: 0px 5px 15px -5px rgba(0, 0, 0, 0.2);
+        }
+
+        .interview-odd .interview_text {
+            float: left;
+            padding-right: 84px;
+          }
+        .interview-even .interview_text {
+            float: right;
+            padding-left: 74px;
+            padding-right: 0;
+          }
+        .interview-01 {
+            background: #FFF url('/image/upload/recruit/interview/interview01.jpg') no-repeat right 20px;
+            background-size: 45%;
+        }
+        .interview-02 {
+            background: #FFF url('/image/upload/recruit/interview/interview02.jpg') no-repeat left 20px;
+            background-size: 45%;
+        }
+        .interview-03 {
+            background: #FFF url('/image/upload/recruit/interview/interview03.jpg') no-repeat right 20px;
+            background-size: 45%;
+        }
+        .interview_text {
+            width: 50%;
+            min-height: 385px;
+            background: #FFF;
+            box-sizing: border-box;
+            .btn_area {
+                padding: 30px 0 60px;
+                text-align: center;
+            }
+        }
+        .interview_text_label {
+            position: relative;
+            margin: 63px 0 20px;
+            font-weight: bold;
+            font-size: 1.2em;
+            color: #90c1d6;
+            &::before {
+                display: inline-block;
+                content: "■";
+                position: relative;
+                margin-right: 5px;
+                font-size: 1.1em;
+            }
+        }
+        .interview_text_title {
+            margin-bottom: 20px;
+            font-size: 1.7em;
+            font-weight: bold;
+            line-height: 1.7;
+        }
+        .interview_text .btn_area .btn {
+            font-size: 1em;
+        }
+        .btn_area {
+            padding: 40px 0;
+            .btn {
+                display: inline-block;
+                position: relative;
+                padding: 12px 98px 10px;
+                font-size: 1em;
+                background-color: #90c1d6;
+                color: #FFF;
+                &:after {
+                    content: "";
+                    display: block;
+                    width: 7px;
+                    height: 7px;
+                    position: absolute;
+                    top: -1px;
+                    bottom: 0;
+                    right: 40px;
+                    margin: auto;
+                    border-top: 2px solid #FFF;
+                    border-right: 2px solid #FFF;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+
+    hr {
+        border-top: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .hero_content {
+        max-width: 50%;
+    }
+}

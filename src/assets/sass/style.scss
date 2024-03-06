@@ -1,0 +1,207 @@
+@import './variables.scss';
+@import './glyphicons';
+@import './button.scss';
+@import './applyForm.scss';
+
+body {
+    background: $container-bg;
+    font-size: $font-size-base;
+    font-family: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+}
+html, body, header {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+ * {
+        margin: 0;
+        padding: 0;
+        vertical-align: baseline;
+        list-style: none;
+ }
+
+.cursor-disable {
+    pointer-events: none;
+}
+
+a {
+    color: $blue-300;
+    transition: 0.5s;
+    &:hover, &:active, &:focus {
+        color:$blue-300;
+        outline: none;
+        text-decoration: none;
+    }
+}
+
+.back-to-top {
+    position: fixed;
+    display: none;
+    background: $blue-300;
+    color: $white;
+    padding: 6px 12px 9px 12px;
+    font-size: 16px;
+    border-radius: 2px;
+    right: 1px;
+    bottom: 41px;
+    transition: background 0.5s;
+}
+
+.back-to-top:focus {
+    background: $blue-300;
+    color: $white;
+    outline: none;
+  }
+  
+  .back-to-top:hover {
+    background: $blue-500;
+    color: $white;
+}
+
+
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+#header {
+    height: 90px;
+    position: fixed;
+    top: 0;
+    background-color: $white;
+    width: 100%;
+    overflow-y: hidden;
+    z-index: 200;
+    .logo {
+        display: inline-block;
+        margin: auto 0;
+        position: absolute;
+        white-space: nowrap;
+        transform: translateX(30%);
+        top: 25px;
+    }
+    .menu-container {
+        float: right;
+        margin: 0;
+        position: absolute;
+        right: 0;
+        margin-right: 15%;
+        .menu_list {
+            display: table;
+            .menu_list_item {
+                display: table-cell;
+                position: relative;
+                .menu_list_item_inner {
+                    display: none;
+                    position: fixed;
+                    background-color: $white;
+                    .menu_sublist {
+                        display: block;
+                        .menu_sublist_item {
+                            display: block;
+                            position: relative;
+                            padding: 4px;
+                            color: #626262;
+                            font-size: 80%;
+                            a {
+                                padding: 15px 20px;
+                            }
+                            a:after {
+                                display: none;
+                            }
+                            &:hover {
+                                background-color: $gray-200;
+                            }
+                        }
+                    }
+                }
+
+                a {
+                    display: block;
+                    position: relative;
+                    padding: 37px 18px;
+                    color: #626262;
+                    line-height: 1.1;
+                    &:after {
+                        display: none;
+                        content: "";
+                        width: 100%;
+                        height: 2px;
+                        position: absolute;
+                        bottom: 0;
+                        left: 0;
+                        background-color: #e60012;
+                    }
+                }
+                &:hover {
+                    a::after {
+                        display: block;
+                    }
+                    .menu_list_item_inner {
+                        display: block;
+                    }
+                }
+            }
+
+            .menu_active, .menu_list_item:hover {
+                a:after {
+                    display: block;
+                }
+            }
+        }
+    }
+
+    .cbox_language {
+        padding-top: 35px;
+        transform: translateX(-145%);
+        right: 0;
+        position: fixed;
+        .dropdown-toggle {
+            border: none;
+            border-color: unset;
+            font-size: 75%;
+        }
+        .dropdown-menu {
+            min-width: 6.3rem;
+            li {
+                font-size: 12px;
+                max-width: 100px;
+            }
+            li:hover {
+                background-color: rgb(174, 223, 243);
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+#main_content {
+    margin-top: 90px;
+    display: block;
+    overflow: hidden;
+}
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer {
+    background: $blue-500;
+    font-size: $font-size-small;
+    color: $white;
+    .justify-content-center {
+        margin: auto;
+        height: 40px;
+        padding-top: 15px;
+    }
+}
+
+
+.disabled {
+    pointer-events:none;
+    opacity:0.6;
+    a {
+        pointer-events: none;
+    }
+}
+
+.mfp-zoom-out-cur,
+.mfp-zoom-out-cur .mfp-image-holder .mfp-close {
+    cursor: pointer !important;
+}

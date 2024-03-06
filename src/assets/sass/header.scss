@@ -1,0 +1,43 @@
+@import './variables.scss';
+
+#headerAera {
+  border-top: 1px solid rgba(73, 78, 92, 0.1);
+  box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+  background: $white;
+}
+.breadcrumb{
+    list-style:none;
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background: $white;
+    
+    li{
+      float:left;
+      font-size: 85%;
+      border-color: $orange;
+      
+      a {
+        color: $black;
+        display:block;
+        text-decoration: none;
+        position:relative;
+        line-height:30px;
+        padding: 0 0px 0 5px;
+        text-align: center;
+        margin-right: 10px;
+        i {
+            padding-right: 5px;
+        }
+        .mark {
+            margin-right: 5px;
+            background-color: unset;
+        }
+
+        &:hover {
+            color: $blue-300;
+        }
+      }
+    }
+}

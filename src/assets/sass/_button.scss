@@ -1,0 +1,50 @@
+.dot-frame-button {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 9px;
+    font-weight: bold;
+    background-image: url('/image/common/dots_blue.png');
+    a {
+        display: inline-block;
+        min-width: 150px;
+        padding: 0.5em 0.5em;
+        background-color: #fff;
+        color: #0f53a0;
+        text-align: center;
+        -webkit-transition: background-color .2s ease-in-out, color .2s ease-in-out;
+        transition: background-color .2s ease-in-out, color .2s ease-in-out;
+        border: unset;
+        
+        &:hover {
+            background-color: #0f53a0;
+            color: $white;
+            span::before, span::after {
+                background-color: $white;
+            }
+        }
+    }
+    span {
+        display: inline-block;
+        position: relative;
+    }
+}
+
+
+.btn_input_file {
+    margin-top: 30px;
+    display: inline-block;
+    padding: 9px;
+    font-weight: bold;
+    background-image: url('/image/common/dots_blue.png');
+    span {
+        display: inline-block;
+        // min-width: 252px;
+        padding: 0.1em;
+        background-color: #fff;
+        color: #0f53a0;
+        text-align: center;
+        -webkit-transition: background-color .2s ease-in-out, color .2s ease-in-out;
+        transition: background-color .2s ease-in-out, color .2s ease-in-out;
+        border: unset;
+    }
+}

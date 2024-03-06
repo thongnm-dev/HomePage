@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300;400;700&amp;family=Questrial&amp;display=swap");
+
+body {
+  font-family: "Questrial", sans-serif;
+  font-size: 16px;
+  line-height: 30px;
+  margin: 0;
+  text-align: left;
+  background-color: #fff;
+  font-weight: 400;
+}
+
+/*--------------------
+ TYPOGRAPHY
+-----------------*/
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 700;
+  line-height: 1.4;
+  margin-bottom: .5rem;
+  color: black;
+}
+
+
+
+/*====================
+Banner Area
+======================*/
+.section-padding {
+  padding: 100px 0px;
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.heading h2 {
+  font-size: 42px;
+}
+
+.page-header {
+  padding: 90px 0px;
+  background: #F4F5F8;
+  position: relative;
+}
+
+.page-header .title-block {
+  text-align: center;
+}
+
+.page-header .title-block h1 {
+  color: #000;
+  line-height: 50px;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.page-header .title-block ul li a {
+  font-weight: 600;
+}
+
+.page-wrapper {
+  padding: 100px 0px;
+}
+
+.bg-grey {
+  background: #F7F5F4;
+}
+
+.mt--105 {
+  margin-top: -105px;
+}
+
+.section-heading {
+  margin-bottom: 70px;
+}
+
+.section-heading h3 {
+  font-size: 38px;
+  margin: 10px 0px 10px;
+  line-height: 44px;
+}
+
+.section-heading p {
+  color: #222222;
+}
+
+.center-heading {
+  text-align: Center;
+}
+
+.center-heading p {
+  padding: 0px 70px;
+}
+
+.subheading {
+  text-transform: uppercase;
+  font-family: "Kumbh Sans", sans-serif;
+  font-weight: 600;
+  font-size: 13px;
+  color: #20ad96;
+  letter-spacing: 2px;
+}
+
+button:focus {
+  outline: none;
+}
+
+.bg-gray {
+  background: #F4F5F8;
+}
+
+.bg-black {
+  background: #1D292E;
+}
+
+.text-underline {
+  text-decoration: underline;
+}
+
+.text-underline:hover {
+  text-decoration: underline;
+}
+
+.btn-sm {
+  padding: 10px 24px;
+  font-size: 14px;
+}
+
+.section-sm {
+  padding: 60px 0px;
+}
+
+p {
+    font-size: 15px;
+    color: black;
+}
+
+.mb--90 {
+  margin-bottom: -90px;
+}
+
+.pt-190 {
+  padding-top: 190px !important;
+}
+
+/* ================
+ BAnner
+================*/
+.banner-2 {
+  padding: 280px 0px;
+  background: url(/image/background/security.png) no-repeat 58% 56%;
+  background-size: cover;
+  position: relative;
+}
+
+.title-banner {
+    color: white;
+    font-size: 3em;
+    margin-left: 65%;
+}
+
+.banner-2 .banner-2-content h1 {
+  font-size: 60px;
+  margin: 15px 0px 15px;
+  line-height: 73px;
+  letter-spacing: -1.3px;
+  color: #fff;
+}
+
+.banner-2 .banner-2-content p {
+  margin-bottom: 35px;
+  color: #fff;
+  opacity: .8;
+  font-size: 20px;
+  line-height: 38px;
+}
+
+.banner-2 .banner-2-content .subheading {
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  font-size: 16px;
+}
+
+.banner-2-img-round {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-2-img-round:before {
+  position: absolute;
+  content: "";
+  right: 10px;
+  top: 0px;
+//   background: url("../images/bg/dot-bg.png") no-repeat;
+  width: 40%;
+  height: 40%;
+  z-index: -1;
+}
+
+.banner-2-img-round img {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+/*==========================
+Single Blog Page 
+===========================*/
+.single-post-content .post-meta {
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eef2fb;
+    margin-bottom: 30px;
+  }
+  
+  .single-post-content .post-meta ul li {
+    display: inline-block;
+    color: #676767;
+    margin-right: 30px;
+    position: relative;
+  }
+  
+  .single-post-content .post-meta ul li:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    width: 1px;
+    height: 20px;
+    background-color: #e0dde3;
+    right: -20px;
+  }
+  
+  .single-post-content .post-meta ul li:last-child:before {
+    display: none;
+  }
+  
+  .single-post-content .post-meta .blog-comment {
+    float: right;
+  }
+  
+  .single-post-content .post-meta .blog-comment h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 0;
+  }
+  
+  .single-post-content .post-meta .blog-comment h3 i {
+    color: #20ad96;
+    margin-right: 5px;
+    position: relative;
+    top: 2px;
+  }
+  
+  .post-single h1, .post-single h2, .post-single h3, .post-single h4, .post-single h5, .post-single h6 {
+    margin-bottom: 20px;
+  }
+  
+  .post-single img {
+    margin-bottom: 20px;
+  }
+  
+  .post-single blockquote {
+    padding: 40px 30px 40px;
+    margin-top: 35px;
+    border-left: 5px solid #385777;
+    position: relative;
+    padding-left: 120px;
+    background: #20ad96;
+    color: #ffff;
+    line-height: 36px;
+    letter-spacing: .5px;
+    font-size: 24px;
+  }
+  
+  .post-single blockquote:after {
+    content: "\f10d";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    position: absolute;
+    font-size: 60px;
+    opacity: 0.1;
+    top: 35%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    left: 30px;
+    z-index: 1;
+  }
+  
+  .post-single blockquote i {
+    font-size: 30px;
+    display: none;
+  }
+  
+  .post-single blockquote cite {
+    display: block;
+    font-style: normal;
+    margin-top: 20px;
+    color: #fff;
+    font-size: 16px;
+  }
+

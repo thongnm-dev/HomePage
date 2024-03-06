@@ -1,0 +1,97 @@
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-800: #343a40 !default;
+$blue-dark: #0c2e8a;
+$light:     #fff;
+    @mixin display-child($n) {
+        @for $i from 2 through $n {
+            &:nth-child(#{$i}) {
+                a {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+    .pagination {
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 12px;
+    }
+
+    .left {
+        text-align: left;
+        padding-left: 20px !important;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .container-pagination {
+        counter-reset: pagination;
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 100%;
+
+        &:after {
+          clear: both;
+          content: "";
+          display: table;
+        }
+
+        ul {
+          width: 100%;
+          margin-top: 0.5rem;
+          margin-bottom: 0.5rem;
+        }
+
+        .large {
+            width: 45rem;
+        }
+
+        ul, li {
+            list-style: none;
+            display: inline;
+            padding-left: 5px;
+        }
+
+        li {
+            counter-increment: pagination;
+            &:hover {
+                a {
+                    color: lighten($light, 5%);
+                    background-color: $blue-dark;
+                    border: solid 1px $gray-800;
+                }
+            }
+
+            &.active {
+              a {
+                color: lighten($light, 5%);
+                background-color: $blue-dark;
+                border: solid 1px $gray-800;
+              }
+            }
+
+            &:nth-child(2) {
+                counter-reset: pagination;
+            }
+
+            a {
+                border: solid 1px darken($gray-200, 10%);
+                border-radius: 0.2rem;
+                color: darken($gray-200, 45%);
+                text-decoration: none;
+                text-transform: uppercase;
+                display: inline-block;
+                text-align: center;
+                padding: 0.5rem 0.9rem;
+            }
+        }
+    }

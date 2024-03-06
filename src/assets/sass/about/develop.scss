@@ -1,0 +1,139 @@
+#develop-page {
+  margin-bottom: 20px;
+  font-family: "Questrial", sans-serif !important;
+  font-size: 16px !important;
+  line-height: 30px !important;
+  margin-bottom: 20px;
+  .row {
+      font-family: "Questrial", sans-serif !important;
+  }
+
+  .top-image {
+      img {
+          display: block;
+          margin: auto;
+      }
+  }
+  .section-header{
+    margin-top: 4%;
+  }
+
+  .card {
+      border: unset;
+      background: none;
+  }
+  .develop-header {
+      font-size: 16px;
+      text-align: center;
+      vertical-align: middle;
+  }
+
+  .develop-header > * {
+      margin: auto;
+      border: 1px solid white;
+      background-color: #a84c38;
+      color: white;
+      height: 45px;
+  }
+
+  /* ================
+ BAnner
+================*/
+.banner-2 {
+  padding: 245px 0px;
+  background: url(/image/background/banner5.jpg) no-repeat 58% 56%;
+  background-size: cover;
+  position: relative;
+}
+
+.title-banner {
+    color: white;
+    font-size: 3em;
+    margin-left: 10%;
+}
+
+.banner-2 .banner-2-content h1 {
+  font-size: 60px;
+  margin: 15px 0px 15px;
+  line-height: 73px;
+  letter-spacing: -1.3px;
+  color: #fff;
+}
+
+.banner-2 .banner-2-content p {
+  margin-bottom: 35px;
+  color: #fff;
+  opacity: .8;
+  font-size: 20px;
+  line-height: 38px;
+}
+
+.banner-2 .banner-2-content .subheading {
+  color: #fff;
+  text-transform: capitalize;
+  letter-spacing: 0px;
+  font-size: 16px;
+}
+
+.banner-2-img-round {
+  position: relative;
+  z-index: 1;
+}
+
+.banner-2-img-round:before {
+  position: absolute;
+  content: "";
+  right: 10px;
+  top: 0px;
+  width: 40%;
+  height: 40%;
+  z-index: -1;
+}
+
+.banner-2-img-round img {
+  border-radius: 100%;
+  overflow: hidden;
+}
+
+  
+
+  .develop-header{
+      .col-2,.col-3 {
+          padding: 6px;
+          // font-weight: bolder;
+      }
+  }
+
+  #detail {
+      .row > * {
+          border: 1px solid white;
+          padding: 7px;
+          // background-color: #FFCD9A;
+      }
+
+      .row:nth-child(odd) {
+          // background-color: rgb(228, 223, 236);
+          background-color: #ffddbc;
+      }
+      .row:nth-child(even) {
+          background-color: #FFCD9A;
+      }
+  }
+
+  span.develop-title {
+      color: #8e4534;
+      font-size: 21px;
+      margin-left: 3px;
+      font-weight: bold;
+  }
+
+  .fa-circle {
+      color: #8e4534;
+  }
+
+  .text-wrap {
+      width: 30rem;
+      margin-left: 26% !important;
+  }
+
+}

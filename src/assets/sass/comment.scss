@@ -1,0 +1,110 @@
+@import 'variables.scss';
+.comments {
+    padding: 15px 30px;
+
+    .fbt-sep-title {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -ms-align-items: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin: 0 0 20px;
+        overflow: hidden;
+        .title-heading-left {
+            font-size: $font-size-h4;
+            text-transform: uppercase;
+            background-color: #111111;
+            color: #ffffff;
+            height: 32px;
+            line-height: 33px;
+            padding: 0 17px 0 17px;
+            position: relative;
+            border-bottom: 0px solid #111111;
+            border-top: 0px solid #111111;
+        }
+        .title-sep-container {
+            position: relative;
+            height: 32px;
+            -ms-flex-grow: 1;
+            -webkit-box-flex: 1;
+            -webkit-flex-grow: 1;
+            -ms-flex-positive: 1;
+            flex-grow: 1;
+        }
+        .title-sep {
+            position: relative;
+            display: block;
+            width: 100%;
+            border-bottom: 2px solid #111111;
+            border-top: 0px solid #111111;
+        }
+        .sep-double {
+            height: 28px;
+        }
+    }
+    .comment-form {
+        background-color: #fff;
+        border: 1px solid #e5e5e5;
+        border-bottom: 1px solid #eee;
+
+
+        #commentsHolder {
+            padding: 18px 22px 10px 22px;
+            #commentBodyField {
+                background-color: #fff;
+                border: 1px solid #e5e5e5;
+                color: #222;
+                display: inline-block;
+                font-size: 13px;
+                padding: 8px 2px 2px 8px;
+                vertical-align: top;
+                width: 100%;
+                &:focus {
+                    outline: none !important;
+                    border-color: #719ECE;
+                    box-shadow: 0 0 10px #719ECE;
+                }
+            }
+        }
+        textarea {
+            width: 100%;
+        }
+        .postCommentButtonHolder {
+            background-color: #f5f5f5;
+            padding: 10px 10px 4px 10px;
+            clear: both;
+            input[type="button"] {
+                background-color: #f5f5f5;
+                border: 1px solid #ccc;
+                border: 1px solid rgba(0,0,0,.1);
+                border-radius: 2px;
+                font-size: 11px;
+                height: 27px;
+                padding-bottom: 0;
+                text-align: center;
+                text-shadow: 0 1px rgba(0,0,0,.1);
+                vertical-align: top;
+                width: 75px;
+                color: #222;
+            }
+            #postCommentSubmit {
+                background-color: #4d90f0;
+                border: 1px solid #3079ed;
+                color: #fff;
+                font-weight: bold;
+                margin: 0 8px 6px 0;
+            }
+            #postCommentPreview {
+                color: #444;
+                margin: 0 8px 6px 0;
+            }
+        }
+    }
+}

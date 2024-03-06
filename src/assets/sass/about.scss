@@ -1,0 +1,253 @@
+@import 'variables.scss';
+
+
+.introduction {
+    position: relative;
+    z-index: 1;
+
+    .background {
+        background: url('/image/background/banner-size-medium.jpg') center no-repeat;
+        width: 100%;
+        height: 400px;
+        background-size: contain;
+
+        .sologan {
+            padding-top: 15%;
+            padding-left: 30%;
+        }
+    }
+}
+
+.box {
+    position: relative;
+    max-width: 1200px;
+    margin: 40px auto 0;
+    padding: 25px 40px;
+    background-color: $white;
+    overflow: hidden;
+    box-shadow: 10px 10px 15px rgba(73, 78, 92, 0.1);
+}
+
+.details {
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        border-left: 1px solid #eee;
+        border-top: 1px solid #eee;
+        width: 100%;
+        margin-bottom: 20px;
+
+        th, td {
+            padding: 15px;
+            border-right: 1px solid #eee;
+            border-bottom: 1px solid #eee;
+            font-size: 14px;
+        }
+    }
+
+    .box {
+        h3 {
+            font-weight: bold;
+            a {
+                color: $black;
+            }
+        }
+        .box_content {
+            padding-left: 40px;
+            h3 {
+                margin-top: -5px;
+                font-weight: bold;
+                line-height: 1.35;
+            }
+
+            p {
+                color: #666;
+                line-height: 2.1;
+                margin: 0%;
+            }
+
+            .fa-check {
+                padding-right: 10px;
+            }
+        }
+
+        &.has_header {
+            .box_header {
+                float: left;
+                width: 30%;
+                height: auto;
+                img {
+                    width: 100%;
+                    height: auto;
+                    vertical-align: top;
+                    margin-top: 0.5rem;
+                }
+            }
+            .box_content {
+                float: right;
+                width: 62%;
+            }
+        }
+        &:first-child {
+            margin-top: 0px;
+        }
+        &:last-child {
+            margin-bottom: 30px;
+        }
+    }
+
+    .box_philosophy {
+        .box_content {
+            h4 {
+                font-size: $font-size-h4;
+                color: $blue-500;
+            }
+            p {
+                padding-left: 1rem;
+            }
+        }
+    }
+    .box_customer {
+        .box_content {
+            .team {
+                margin-top: 5%;
+                margin-bottom: 5%;
+            }
+            
+            .mb-custom {
+                margin-bottom: 5%;
+            }
+            
+            .team-item {
+                text-align: center;
+                transition: all .4s ease 0s;
+                border-radius: 5px;
+                overflow: hidden;
+              }
+              .img-fluid-2 {
+                max-width: 100%;
+                height: auto;
+            }
+              
+              .team-item img {
+                width: 100%;
+              }
+              
+              .team-item:hover {
+                box-shadow: 0 0 30px rgba(0, 0, 0, 0.08);
+                background: $container-bg;
+              }
+            
+              .pt-100 {
+                padding-top: 100px;
+              }
+              
+              .team-item:hover .team-socials {
+                opacity: 1;
+                -webkit-transform: translateY(10px);
+                        transform: translateY(10px);
+              }
+              
+              .team-item:hover .team-info {
+                -webkit-transform: translateY(-20px);
+                        transform: translateY(-20px);
+              }
+              
+              .team-info {
+                position: relative;
+                background: #fff;
+                margin: -50px 20px 0px;
+                padding: 20px 10px;
+                border-radius: 5px;
+                transition: all .4s ease 0s;
+                overflow: hidden;
+              }
+              
+              .team-info h5 {
+                margin-bottom: 0px;
+                font-size: 20px;
+              }
+              
+              .team-info p {
+                margin-bottom: 10px;
+              }
+              
+              .team-info .team-socials {
+                transition: all .4s ease 0s;
+                -webkit-transform: translateY(80px);
+                        transform: translateY(80px);
+              }
+              
+              .team-info .team-socials a {
+                width: 35px;
+                height: 35px;
+                text-align: center;
+                border: 1px solid #ddd;
+                display: inline-block;
+                border-radius: 100%;
+                color: #222;
+                padding-top: 3px;
+                font-size: 14px;
+                background: #ddd;
+              }
+              
+              .team-info .team-socials a:hover {
+                background-color: #20ad96;
+                color: #fff;
+                border-color: #20ad96;
+              }
+        }
+    }
+
+    .box_contact {
+        .box_content {
+            border-top: 1px solid #ddd;
+            margin-top: 30px;
+            padding-top: 20px;
+            [class*=" icon-"], [class^=icon-] {
+                font-family: 'Font Awesome 5 Free';
+                font-style: normal;
+                font-variant: normal;
+                font-weight: 400;
+                line-height: 1;
+                text-transform: none;
+            }
+            .dot-frame-button {
+                a:hover {
+                    background-color: $white;
+                    color: $black;
+                    span::before, span::after {
+                        background-color: $white;
+                    }
+                }
+            }
+            .lfa--action-box {
+                align-items: center;
+                color: $black;
+                display: flex;
+                flex: 1 1 0;
+                justify-content: center;
+                width: 230px;
+                height: 45px;
+                span {
+                    align-items: center;
+                    color: #0069ff;
+                    display: flex;
+                    font-size: 21px;
+                    height: 40px;
+                    justify-content: center;
+                    margin-right: 20px;
+                    width: 40px;
+
+                    &:before {
+                        content: "\f4ad";
+                    }
+                }
+            }
+            .group_info {
+                margin: auto;
+                text-align: center;
+            }
+        }
+    }
+}

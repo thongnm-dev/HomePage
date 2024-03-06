@@ -1,0 +1,10 @@
+.error_required{
+    border-color: red;
+    // box-shadow: 0 0 0 0.01rem rgba(255, 8, 0, 0.25);
+}
+.error_required:focus{
+    
+    border-color: #ff5050;
+    
+    box-shadow: 0 0 0 0.2rem rgba(255, 0, 0, 0.35);
+}
